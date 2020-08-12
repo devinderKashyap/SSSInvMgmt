@@ -5,7 +5,8 @@
 	<div class="panel panel-primary">
 		<div class="panel-heading">Home Page</div>
 		<div class="panel-body">
-			<a href="/list-logs">Click here</a> to check logs
+			<!-- <a href="/list-logs">Click here</a> to check logs -->
+			Welcome to Inventory Management
 		</div>
 	</div>
 </div>

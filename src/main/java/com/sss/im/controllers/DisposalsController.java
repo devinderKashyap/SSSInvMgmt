@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sss.im.models.InventoryItem;
-import com.sss.im.repo.InventoryItemDAO;
+import com.sss.im.dao.GeneralInventoryDAO;
+import com.sss.im.models.InventoryDisposal;
 
 @RestController
-@RequestMapping("/items")
-public class ItemsController {
+@RequestMapping("/disposals")
+public class DisposalsController {
 	
 	@Autowired
-	InventoryItemDAO dao; 
+	GeneralInventoryDAO dao; 
 	
 	@RequestMapping(method=RequestMethod.GET)
-	public List<InventoryItem> getAllInventory(){
-		return dao.getAllItems();
+	public List<InventoryDisposal> getAllInventoryDisposals(){
+		return dao.getAllInventoryDisposal();
 	}
 	
 	@RequestMapping(method=RequestMethod.POST,consumes=MediaType.APPLICATION_JSON_VALUE,produces=MediaType.APPLICATION_JSON_VALUE)
-	public InventoryItem saveInventory(@RequestBody InventoryItem item){
-		System.out.println("ItemsController.saveInventory() "+item);
-		return dao.createItem(item);
+	public InventoryDisposal saveInventoryTransaction(@RequestBody InventoryDisposal disposal){
+		System.out.println("ItemsController.saveInventory() "+disposal);
+		return dao.addInventoryDisposal(disposal);
 	}
 
 }

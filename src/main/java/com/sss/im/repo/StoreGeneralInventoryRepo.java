@@ -3,8 +3,8 @@ package com.sss.im.repo;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.sss.im.models.InventoryItem;
+import com.sss.im.models.StoreGeneralInventory;
 @Repository
-public interface ItemsRepo extends CrudRepository<InventoryItem, String>{
+public interface StoreGeneralInventoryRepo extends CrudRepository<StoreGeneralInventory, String>{
 
 }
