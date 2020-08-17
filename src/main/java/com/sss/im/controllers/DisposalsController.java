@@ -13,7 +13,7 @@ import com.sss.im.dao.GeneralInventoryDAO;
 import com.sss.im.models.InventoryDisposal;
 
 @RestController
-@RequestMapping("/disposals")
+@RequestMapping(value="${api.v1.baseurl}/disposals")
 public class DisposalsController {
 	
 	@Autowired

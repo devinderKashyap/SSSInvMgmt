@@ -13,7 +13,7 @@ import com.sss.im.dao.GeneralInventoryDAO;
 import com.sss.im.models.InventoryTransaction;
 
 @RestController
-@RequestMapping("/transactions")
+@RequestMapping("${api.v1.baseurl}/transactions")
 public class TransactionsController {
 	
 	@Autowired

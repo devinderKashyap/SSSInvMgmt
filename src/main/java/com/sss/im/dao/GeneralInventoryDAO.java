@@ -208,4 +208,10 @@ public class GeneralInventoryDAO {
 		
 	}
 	
+	
+	///////////////////////////////////// deletions
+	
+	public void deleteInventoryZones(String zoneName) {
+		zonesRepo.deleteById(zoneName);
+	}
 }

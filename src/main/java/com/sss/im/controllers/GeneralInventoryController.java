@@ -11,7 +11,7 @@ import com.sss.im.dao.GeneralInventoryDAO;
 import com.sss.im.models.StoreGeneralInventory;
 
 @RestController
-@RequestMapping("/inventory")
+@RequestMapping("${api.v1.baseurl}/inventory")
 public class GeneralInventoryController {
 	
 	@Autowired
