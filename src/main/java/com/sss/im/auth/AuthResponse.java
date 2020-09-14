@@ -2,17 +2,17 @@ package com.sss.im.auth;
 
 public class AuthResponse {
 	
-	private final String jwt;
+	private final String authToken;
 
 	
-	public AuthResponse(String jwt) {
+	public AuthResponse(String authToken) {
 		super();
-		this.jwt = jwt;
+		this.authToken = authToken;
 	}
 
 
-	public String getJwt() {
-		return jwt;
+	public String getAuthToken() {
+		return authToken;
 	}
 
 	
